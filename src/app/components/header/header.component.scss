@@ -1,0 +1,41 @@
+header {
+    background-color: #bebebe;
+    padding: 20px;
+
+    #logo {
+        display: flex;
+        
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+    }
+
+    #navbar-wrapper {
+        a {
+            font-size: 18px;
+            position: relative;
+            margin: 0 10px;
+            color: #000;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                transition: all 200ms ease-in-out;
+                background-color: rgb(59, 76, 87);
+            }
+
+            &:hover {
+                &::before {
+                    transition: all 200ms ease-in-out;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

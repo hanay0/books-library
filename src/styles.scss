@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+// resets
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi';
+}
+a {
+    text-decoration: none;
+}
+// flex helpers
+.d-flex {
+    display: flex;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
