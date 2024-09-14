@@ -1,0 +1,8 @@
+<div class="d-flex flex-column" id="book-card">
+    <img *ngIf="coverId; else defaultImage" 
+        [src]="'https://covers.openlibrary.org/b/id/' + coverId + '-M.jpg'" alt="Book Cover">
+    
+    <ng-template #defaultImage>
+        <img src="../../../assets/images/dummy-cover.jpg" alt="Default Book Cover">
+    </ng-template>
+</div>

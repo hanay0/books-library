@@ -1,0 +1,25 @@
+#list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (max-width: 480px) {
+        justify-content: center;
+    }
+
+    app-card {
+        width: calc(33.333% - 10px);
+
+        @media (max-width: 768px) {
+            width: calc(50% - 10px);
+        }
+
+        @media (max-width: 480px) {
+            width: calc(100% - 10px);
+        }
+    }
+}
